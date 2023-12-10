@@ -6,6 +6,7 @@
 	import Tree from '$lib/Tree.svelte';
 	import { buildFileTree, type TreeItem } from '$lib/buildFileTree';
 	import { files } from '$lib/stores/files';
+	import { openedFile } from '$lib/stores/openedFile';
 
 	const treeItems = writable<TreeItem[]>([]);
 	let fileSelectInput: HTMLInputElement | null = null;
@@ -99,6 +100,7 @@
 				<h3 class="text-lg font-bold">
 					<span class="sr-only"> Contents of </span>
 					{$files.item(0)?.name}
+					({$openedFile || 'No file selected'})
 				</h3>
 			</div>
 			<hr />
