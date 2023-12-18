@@ -24,7 +24,7 @@
 		{@const isExpanded = $isExpandedMap[itemId] ?? false}
 		<li class="pl-4">
 			<button
-				class="flex items-center gap-1 rounded-md p-1 focus:bg-magnum-200"
+				class="flex items-center gap-1 rounded-md p-1 focus:bg-magnum-200 text-left"
 				aria-expanded={isExpanded}
 				on:click={() => {
 					if (type !== 'folder') {
