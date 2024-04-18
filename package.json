@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.27.4",
 		"@types/node": "^20.10.1",
+		"@types/prismjs": "^1.26.3",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.16",
@@ -36,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"fflate": "^0.8.1",
-		"lucide-svelte": "^0.294.0"
+		"lucide-svelte": "^0.294.0",
+		"prismjs": "^1.29.0"
 	}
 }
